@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML 3</title>
+</head>
+<body>
+    <h1>Reserva de sociedad</h1>
+    <p>Rellena el siguiente formulario para reservar la sociedad para un día concreto</p>
+    <form>
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+            <label>Eres socio?</label>
+            <input type="radio" id="socio_si" name="socio" value="Si">
+            <label for="socio_si">Sí, soy socio</label>
+            <input type="radio" id="socio_no" name="socio" value="No">
+            <label for="socio_no">No soy socio</label>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="edad">Edad</label>
+            <select>
+                <option value="mayor">Mayor de 18</option>
+                <option value="menor">Menor de 18</option>
+            </select>
+            <br><br>
+            <label for="fecha">Selecciona la fecha y hora de reserva:</label>
+            <input type="date" id="fecha" name="fecha" placeholder="dd/mm/aaaa"> 
+            <input type="time" id="hora" name="hora" placeholder="-- : --">
+            <br><br>
+            <label for="comentarios"></label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Comentarios"></textarea>
+        </fieldset>
+        <input type="checkbox" id="condiciones" name="condiciones" value="1" required>
+        <label for="condiciones">Acepto las condiciones</label>
+        <br><br>
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+</html>
